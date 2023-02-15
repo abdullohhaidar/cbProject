@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;600&display=swap');
+*{margin: 0;
+padding: 0;
+}
+
+/* HEADER  */
+.header{
+ background-color: white;
+ width: 100%;
+ height: 80px;
+ margin: 0 0 0 0;
+ display: flex;
+ justify-content: space-between;
+ position: fixed;
+ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.logo-name{
+    margin: 0 0 0 5%;
+}
+
+h1{
+    font-family: 'Russo One', sans-serif;
+    margin: 20px 20px 20px 20px;
+}
+
+.navigasi{
+    height: 100%;
+    width: 300px;
+    margin: 0 15% 0 0;
+	
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+li{
+   list-style-type: none;
+    padding: 10px 15px 10px 15px;
+}
+
+.navigasi ul li a{
+    font-family: 'Russo One', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+  
+}
+
+
+/* BODY */
+.container{
+    
+    width: 100%;
+    height: 3900px;
+}
+
+
+/* Slider Home Page */
+.slider{
+	width: 100%;
+	height: 870px;
+	border-radius: 10px;
+	overflow: hidden;
+	object-fit: contain;
+}
+
+.slides{
+	width: 500%;
+	height: 500px;
+	display: flex;
+
+}
+
+.slides .slide2{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 50px;
+	border: 2px solid black;
+	background: rgba(236, 236, 231, 0.425);
+	cursor: pointer;
+}
+
+.slides .slide2:hover{
+	background: rgba(236, 236, 231, 0.125);
+}
+
+.slides .right{
+	right: 0px;
+}
+
+.slides span{
+	font-size: 45px;
+	color: black; 
+}
+
+
+.slides input{
+	display: none;
+	margin-top: 80px;
+}
+
+.slide{
+	width: 20%;
+	transition: 2s;
+}
+
+.slide img{
+	width: 100%;
+	height: 850px;
+	object-fit: cover;
+}
+
+
+.navigation-manual{
+	position: absolute;
+	width: 100%;
+	margin-top: 270px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.manual-btn{
+	border: 1px solid rgb(189, 189, 189);
+	padding: 5px;
+	border-radius: 10px;
+	transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+	margin-right: 40px;
+}
+
+.manual-btn:hover{
+	background: #a5a5a5;
+}
+
+#radio1:checked ~ .first{
+	margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+	margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+	margin-left: -40%;
+}
+
+/* Quality */
+
+.logo{
+   text-align: center;
+   font-family: 'Russo One', sans-serif;
+   margin: 30px;
+   font-size: 30px;
+
+}
+.logo img{
+    width: 25%;
+    height: 25%;
+	margin: 20px;
+}
+
+.content{
+	
+    justify-content: center;
+	display: flex;
+	width: 100%;
+	height: 650px;
+}
+
+.content .frame{
+	margin: 20px;
+	background-color: honeydew;
+	height: 520px;
+	width: 280px;
+	border-radius: 5px;
+	box-shadow: black;
+}
+
+.content .frame img{
+	height: 280px;
+	width: 280px;
+	border-radius: 5px;
+	
+}
+
+.content .frame h3{
+	text-align: center;
+	font-family: 'Russo One', sans-serif;
+	margin: 20px 0 20px 0;
+
+}
+
+.content .frame p{
+	text-align: justify;
+	font-family: Verdana, Tahoma, sans-serif;
+	margin: 25px;
+
+}
+
+/* ABOUT */
+.about{
+	background-image: url(gambar/about.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 900px;
+	padding: 7% 0 0 0;
+}
+
+.about .content_about{
+	border-radius: 10px;
+	background-color:rgba(236, 236, 231, 0.425);
+	text-align: left;
+	width: 40%;
+	height: 68%;
+	margin: 0 0 0 60% ;
+	padding: 3%;
+}
+
+.about h2{
+	font-family: 'Russo One', sans-serif;
+	font-size: 40px;
+	margin: 6% 0 0 0;
+}
+
+.about .isi{
+	text-align: justify;
+	width: 63%;
+	height: 70%;
+	font-size: 19px;
+	margin: 5% 0 5% 0;
+}
+
+.store{
+	display: flex; 
+	flex-direction: row; 
+    background-color: rgb(226, 226, 226); 
+    width: 100%; 
+	height: 11.5%;
+}
+
+.store .card{
+	margin: 2.5vh; 
+    background-color: #fff; 
+	width: 270px; 
+	height: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.store .card .item img{
+	width: 250px; 
+	height: 280px; 
+    border-radius: 15px; 
+    margin-top: 10px; margin-left: 11px; margin-right: 11px;
+}
+
+.store .card .item .text{
+	text-align: left; 
+	width: 240px;
+	height: 80px; 
+	margin: 15px;
+	
+}
+
+.store .card .item .text h4{
+	font-family: 'Russo One', sans-serif;
+	text-transform: uppercase; font-size: 18px;
+}
+
+.store .card .item .text p{
+	width: 200px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px; 
+	color: black;
+	margin: 5px 0 0 0;
+}
+
+.store .card .item .text .bintang{
+width: 100%;
+height: 20px;
+}
+.store .card .item .text .bintang img{
+	width: 20px;
+	height: 20px;
+	margin: 10px 0 0 0;
+}
+
+.store .card .item .text .bintang #cart{
+	width: 35px;
+	height: 35px;
+	margin: 0 10px 10px 10px;
+	float: right;
+}
+
+.store .card .item .text #love{
+	width: 35px;
+	height: 35px;
+	margin: 0 0 20px 0;
+	float: right;
+}
+
+.footer{
+	text-align: center;
+ 	background-color: white;
+	width: 100%;
+	height: 50px;
+	padding: 20px 0 0 0;
+}
+
+
+
+
